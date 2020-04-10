@@ -1,14 +1,17 @@
 import React from "react";
+import { Card, CardText, CardImg, Col } from "reactstrap";
 
 function Followers(props) {
   console.log(props);
   return (
-    <div>
-      <h2>{props.data.name}</h2>
-      <img src={props.data.avatar_url} />
-      <p>Handle: {props.data.login} </p>
-      <p>Followers: {props.data.followers} </p>
-    </div>
+    <Col sm="12" md={{ size: 6, offset: 3 }}>
+      <Card>
+        <CardText>{props.data.name}</CardText>
+        <CardImg src={props.data.avatar_url} />
+        <CardText>Handle: {props.data.login} </CardText>
+        <CardText>Followers: {props.data.followers} </CardText>
+      </Card>
+    </Col>
   );
 }
 export default Followers;

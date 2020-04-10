@@ -35,7 +35,6 @@ class App extends React.Component {
     console.log(this.state);
     return (
       <div>
-        <h1>GitHub User Info</h1>
         <CardList data={this.state} />
       </div>
     );
