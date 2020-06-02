@@ -6,7 +6,7 @@ function Followers(props) {
   return (
     <Col sm="12" md={{ size: 6, offset: 3 }}>
       <Card>
-        <CardHeader>GitHub Followers</CardHeader>
+        <CardHeader>David's Github Followers</CardHeader>
         <CardText>{props.data.name}</CardText>
         <CardImg src={props.data.avatar_url} />
         <CardText>Handle: {props.data.login} </CardText>
