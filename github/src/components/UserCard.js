@@ -6,7 +6,7 @@ function UserCard(props) {
   return (
     <Col sm="12" md={{ size: 6, offset: 3 }}>
       <Card>
-        <CardHeader>GitHub User </CardHeader>
+        <CardHeader>David's GitHub </CardHeader>
         <CardText>{props.data.user.name}</CardText>
         <CardImg src={props.data.user.avatar_url} />
         <CardText>Handle: {props.data.user.login} </CardText>
